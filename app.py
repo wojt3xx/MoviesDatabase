@@ -45,7 +45,8 @@ def list_movies():
     movies = database.get_all_movies()
     for movie in movies:
         is_watched = 'YES' if movie['watched'] else 'NO'
-        print(f"{movie['name']} by {movie['director']} released in {movie['year']}, rating: {movie['rating']}, watched: {movie[is_watched]}")
+        print(
+            f"{movie['name']} by {movie['director']} released in {movie['year']}, rating: {movie['rating']}, watched: {movie[is_watched]}")
 
 
 def prompt_watch_movie():
