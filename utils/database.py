@@ -1,4 +1,4 @@
-from db_connection import DatabaseConnection
+from .db_connection import DatabaseConnection
 
 
 def create_movies_table():

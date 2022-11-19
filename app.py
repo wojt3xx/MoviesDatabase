@@ -1,4 +1,5 @@
 from utils import database
+from utils import art
 
 USER_CHOICE = """
 Enter:
@@ -10,7 +11,7 @@ Enter:
 
 Your choice: """
 
-
+print(art.logo)
 def menu():
     database.create_movies_table()  # just to make sure the file is created
     user_input = input(USER_CHOICE)
